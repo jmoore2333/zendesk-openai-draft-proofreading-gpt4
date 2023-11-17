@@ -1,6 +1,6 @@
 # Draft Proofreading OpenAI Assist
 
-This Zendesk App (Draft Proofreading OpenAI Assist) helps Zendesk Agent to write and proofread a draft of your ticket response by using OpenAI.
+This Zendesk App (Draft Proofreading OpenAI Assist) helps Zendesk Agent to write and proofread a draft of your ticket response by using OpenAI. This fork hard codes gpt-4-1106-preview as the model type to take advantage of testing with an inexpensive GPT-4 Turbo & there are plans to remove the japanese options & add the model type as a variable during the zendesk installer to allow for easier multiple installs with different models. All credit to toru-takahashi.
 
 ### Prerequire
 
@@ -26,7 +26,7 @@ This Zendesk App (Draft Proofreading OpenAI Assist) helps Zendesk Agent to write
 
 ![README](./assets/screenshot-2.png)
 
-### How to access the OpenAI GPT-3 API
+### How to access the OpenAI GPT-4 Turbo API
 
 1. Visit the OpenAI website (https://www.openai.com/) and navigate to the API section
 2. Create an OpenAI account if you don't already have one. This may involve providing necessary information, agreeing to terms of service, and potentially joining a waitlist or being placed in a queue for API access.
