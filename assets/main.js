@@ -31,7 +31,7 @@ async function getPrompt(id, convo) {
       prompt = `
       I want you to act as an AI technical support engineer. 
       The following is a conversation between a support engineer and a customer.
-      Your task is to use artificial intelligence tools, such as natural language processing, with your rhetorical knowledge and experience about effective writing techniques to write a HTML email response behalf of the support engineer.
+      Your task is to use artificial intelligence tools, such as natural language processing, with your rhetorical knowledge and experience about effective writing techniques to write a HTML email response on behalf of the support engineer.
       As a requirement, use '</br>' tag instead of '\n' in the message, and write the draft in Japanese.
     
       ${convo}`;
@@ -40,7 +40,7 @@ async function getPrompt(id, convo) {
       prompt = `
       I want you to act as an AI technical support engineer. 
       The following message with html tags is a draft to a customer by a support engineer.
-      Your task is to use artificial intelligence tools, such as natural language processing, with your rhetorical knowledge and experience about effective writing techniques to proofread a HTML email response  behalf of the support engineer.
+      Your task is to use artificial intelligence tools, such as natural language processing, with your rhetorical knowledge and experience about effective writing techniques to proofread a HTML email response on behalf of the support engineer.
       As a requirement, use '</br>' tag instead of '\n' in the message, and write the draft in Japanese.
     
       ${convo}`;
@@ -49,7 +49,7 @@ async function getPrompt(id, convo) {
       prompt = `
       I want you to act as an AI technical support engineer. 
       The following is a conversation between a support engineer and a customer.
-      Your task is to use artificial intelligence tools, such as natural language processing, with your rhetorical knowledge and experience about effective writing techniques to write a HTML email response behalf of the support engineer.
+      Your task is to use artificial intelligence tools, such as natural language processing, with your rhetorical knowledge and experience about effective writing techniques to write a HTML email response on behalf of the support engineer.
       As a requirement, use '</br>' tag instead of '\n' in the message, and write the draft in English.
     
       ${convo}`;
@@ -58,7 +58,7 @@ async function getPrompt(id, convo) {
       prompt = `
       I want you to act as an AI technical support engineer. 
       The following message with html tags is a draft to a customer by a support engineer.
-      Your task is to use artificial intelligence tools, such as natural language processing, with your rhetorical knowledge and experience about effective writing techniques to proofread a HTML email response  behalf of the support engineer.
+      Your task is to use artificial intelligence tools, such as natural language processing, with your rhetorical knowledge and experience about effective writing techniques to proofread a HTML email response on behalf of the support engineer.
       As a requirement, use '</br>' tag instead of '\n' in the message, and write the draft in English.
     
       ${convo}`;
@@ -76,7 +76,7 @@ async function getSummary(client, prompt) {
       Authorization: "Bearer {{setting.openAiApiToken}}",
     },
     data: JSON.stringify({
-      model: "gpt-3.5-turbo",
+      model: "gpt-4-1106-preview",
       messages: [{ role: "user", content: prompt }],
     }),
     secure: true,
